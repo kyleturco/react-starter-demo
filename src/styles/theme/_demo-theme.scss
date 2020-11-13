@@ -1,0 +1,112 @@
+// ==================================== //
+// Colors
+// ==================================== //
+
+$brand-primary: #0081C9;
+$brand-danger: #C5315F;
+$brand-success: #77C2BF;
+$brand-secondary: #8f8f8f;
+
+$suitcaseMagenta: $brand-danger;
+$suitcaseTeal: $brand-success;
+
+$bkgApp: #EAEDF0;
+$bkgMuted: #F6F8FA;
+
+$cardBorderColor: #dedede;
+
+// ==================================== //
+// Breakpoints
+// ==================================== //
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// ==================================== //
+// Layout
+// ==================================== //
+
+.ant-layout-content {
+    padding: 1rem;
+    background: #EAEDF0;
+
+    @media (min-width: $breakpoint-lg) {
+        padding: 2rem;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+        padding: 4rem;
+    }
+}
+
+// ==================================== //
+// Buttons
+// ==================================== //
+
+// Button primary
+.ant-btn-primary {
+    background-color: $suitcaseMagenta;
+    border: none;
+    box-shadow: none;
+
+    &.transparent {
+        color: $suitcaseMagenta;
+        background-color: lighten($suitcaseMagenta, 45%);
+    }
+}
+
+// Button success
+.ant-btn-success {
+    background-color: $suitcaseTeal;
+    border: none;
+    box-shadow: none;
+
+    &.transparent {
+        color: $suitcaseMagenta;
+        background-color: lighten($suitcaseMagenta, 45%);
+    }
+}
+
+// ==================================== //
+// UI Elements
+// ==================================== //
+
+// Card
+.ant-card {
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+
+    &-head-title {
+        font-size: 1.5rem;
+    }
+}
+
+.card-breadcrumb-container {
+    background: $bkgMuted;
+    margin: -1.5rem -1.5rem 1.5rem;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid $cardBorderColor;
+    border-bottom: 1px solid $cardBorderColor;
+}
+
+hr {
+    border-top: 1px solid $cardBorderColor;
+    border-bottom: none;
+    border-left: none;
+    margin: 2rem 0;
+}
+
+// ==================================== //
+// Text
+// ==================================== //
+
+// Text
+.data-label {
+    color: $suitcaseMagenta;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 1.25;
+}
